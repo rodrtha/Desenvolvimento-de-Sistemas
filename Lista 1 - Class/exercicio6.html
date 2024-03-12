@@ -17,18 +17,24 @@
         }
 
           calcularLucroAnual(){
-        return(this.receitaAnual-this.despesasAnuais).toFixed(2)
+        return(`${this.receitaAnual-this.despesasAnuais}`)
           }
 
           exibirRelatorio(){
-            return(console.log(`Nome da empresa: ${this.nome}.\nReceita anual: ${this.receitaAnual}.\nDespesas Anuais: ${this.despesasAnuais}. /nLucro anual: ${this.calcularLucroAnual}`))
+            return(console.log(`Nome da empresa: ${this.nome};\nReceita anual: ${this.receitaAnual};\nDespesas Anuais: ${this.despesasAnuais}; \nLucro anual: ${this.calcularLucroAnual()}`))
           }
 }
     
-    let Empresa1 = new Empresa("sorvetinho", 100000, 50000)
+    let Empresa1 = new Empresa("rodrigue's", 100000, 5000)
+    let Empresa2 = new Empresa("thatta", 9000, 1000)
 
     console.log(Empresa1);
-    console.log(`${Empresa1.calcularLucroAnual()} ${Empresa1.exibirRelatorio}`);
+
+    console.log(`${Empresa1.exibirRelatorio()}`);
+
+    console.log(Empresa2);
+
+    console.log(`${Empresa2.exibirRelatorio()}`);
     
 </script>
 </body>
