@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 5</title>
+</head>
+<body> 
+    <script>
+
+    class Empresa{
+        constructor(nome, receitaAnual, despesasAnuais){
+          this.nome = nome;
+          this.receitaAnual = receitaAnual;
+          this.despesasAnuais = despesasAnuais;
+        }
+
+          calcularLucroAnual(){
+        return(this.receitaAnual-this.despesasAnuais).toFixed(2)
+          }
+
+          exibirRelatorio(){
+            return(console.log(`Nome da empresa: ${this.nome}.\nReceita anual: ${this.receitaAnual}.\nDespesas Anuais: ${this.despesasAnuais}. /nLucro anual: ${this.calcularLucroAnual}`))
+          }
+}
+    
+    let Empresa1 = new Empresa("sorvetinho", 100000, 50000)
+
+    console.log(Empresa1);
+    console.log(`${Empresa1.calcularLucroAnual()} ${Empresa1.exibirRelatorio}`);
+    
+</script>
+</body>
+</html>

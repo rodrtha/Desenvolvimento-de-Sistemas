@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 5</title>
+</head>
+<body>
+    <script>
+
+    class Filme{
+        constructor(titulo, genero, duracao){
+          this.titulo = titulo;
+          this.genero = genero;
+          this.duracao = duracao;
+        }
+
+          informacoesFilme(){
+        return(console.log(`Titulo do filme: ${this.titulo}.\nGenero: ${this.genero}.\nDuração: ${this.duracao}.`))
+          }
+}
+    
+    let Filme1 = new Filme("Coraline", "Ficção cientifica", "1h 40m")
+ 
+    console.log(Filme1)
+    console.log(`${Filme1.informacoesFilme()}`);
+    
+</script>
+</body>
+</html>
